@@ -1,0 +1,19 @@
+{
+  "name": "s3-sink-connector",
+  "config": {
+    "connector.class": "io.confluent.connect.s3.S3SinkConnector",
+    "tasks.max": "1",
+    "topics": "test-topic,topic-11",
+    "s3.bucket.name": "demo-kafka-s3",
+    "s3.region": "us-east-1",
+    "s3.part.size": "5242880",
+    "flush.size": "3",
+    "storage.class": "io.confluent.connect.s3.storage.S3Storage",
+    "format.class": "io.confluent.connect.s3.format.json.JsonFormat",
+    "schema.compatibility": "NONE",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "aws.access.key.id": "AKIAY4SS7RQ7WNIXQX7E",
+    "aws.secret.access.key": "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"
+  }
+}
