@@ -49,9 +49,9 @@ services:
       CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
       CONNECT_PLUGIN_PATH: "/usr/share/java,/usr/share/confluent-hub-components"
       CONNECT_REST_ADVERTISED_HOST_NAME: "connect"
-      AWS_ACCESS_KEY_ID: "AKIAY4SS7RQ7WNIXQX7E"
-      AWS_SECRET_ACCESS_KEY: "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"
-      AWS_REGION: "us-east-1"
+      AWS_ACCESS_KEY_ID: ""
+      AWS_SECRET_ACCESS_KEY: ""
+      AWS_REGION: ""
     volumes:
       - confluent-hub-components:/usr/share/confluent-hub-components
     command: "bash -c 'confluent-hub install --no-prompt confluentinc/kafka-connect-s3:latest && /etc/confluent/docker/run'"
